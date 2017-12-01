@@ -209,12 +209,14 @@ libappstream-glib.so.8:as_app_get_project_group
 libappstream-glib.so.8:as_app_get_project_license
 libappstream-glib.so.8:as_app_get_provides
 libappstream-glib.so.8:as_app_get_release
+libappstream-glib.so.8:as_app_get_release_by_version
 libappstream-glib.so.8:as_app_get_release_default
 libappstream-glib.so.8:as_app_get_releases
 libappstream-glib.so.8:as_app_get_require_by_value
 libappstream-glib.so.8:as_app_get_requires
 libappstream-glib.so.8:as_app_get_reviews
 libappstream-glib.so.8:as_app_get_scope
+libappstream-glib.so.8:as_app_get_screenshot_default
 libappstream-glib.so.8:as_app_get_screenshots
 libappstream-glib.so.8:as_app_get_search_match
 libappstream-glib.so.8:as_app_get_search_tokens
