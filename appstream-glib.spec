@@ -4,7 +4,7 @@
 #
 Name     : appstream-glib
 Version  : 0.7.4
-Release  : 2
+Release  : 3
 URL      : https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.4.tar.xz
 Source0  : https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.4.tar.xz
 Summary  : Test package
