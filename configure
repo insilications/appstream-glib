@@ -1,2 +1,1 @@
--Denable-rpm=false -Denable-dep11=false -Denable-stemmer=false
-#-Denable-builder=false 
+-Ddep11=false -Dstemmer=false -Drpm=false
