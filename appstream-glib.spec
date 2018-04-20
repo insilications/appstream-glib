@@ -4,7 +4,7 @@
 #
 Name     : appstream-glib
 Version  : 0.7.8
-Release  : 4
+Release  : 5
 URL      : https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.8.tar.xz
 Source0  : https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.8.tar.xz
 Summary  : Test package
@@ -98,7 +98,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1524228193
+export SOURCE_DATE_EPOCH=1524230085
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --prefix /usr --buildtype=plain -Ddep11=false -Dstemmer=false -Drpm=false  builddir
 ninja -v -C builddir
 
