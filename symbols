@@ -294,6 +294,7 @@ libappstream-glib.so.8:as_app_set_comment
 libappstream-glib.so.8:as_app_set_description
 libappstream-glib.so.8:as_app_set_developer_name
 libappstream-glib.so.8:as_app_set_icon_path
+libappstream-glib.so.8:as_app_set_icon_path_rstr
 libappstream-glib.so.8:as_app_set_id
 libappstream-glib.so.8:as_app_set_id_kind
 libappstream-glib.so.8:as_app_set_kind
@@ -301,6 +302,7 @@ libappstream-glib.so.8:as_app_set_merge_kind
 libappstream-glib.so.8:as_app_set_metadata_license
 libappstream-glib.so.8:as_app_set_name
 libappstream-glib.so.8:as_app_set_origin
+libappstream-glib.so.8:as_app_set_origin_rstr
 libappstream-glib.so.8:as_app_set_priority
 libappstream-glib.so.8:as_app_set_project_group
 libappstream-glib.so.8:as_app_set_project_license
@@ -399,6 +401,7 @@ libappstream-glib.so.8:as_icon_set_kind
 libappstream-glib.so.8:as_icon_set_name
 libappstream-glib.so.8:as_icon_set_pixbuf
 libappstream-glib.so.8:as_icon_set_prefix
+libappstream-glib.so.8:as_icon_set_prefix_rstr
 libappstream-glib.so.8:as_icon_set_scale
 libappstream-glib.so.8:as_icon_set_url
 libappstream-glib.so.8:as_icon_set_width
@@ -431,6 +434,7 @@ libappstream-glib.so.8:as_image_set_kind
 libappstream-glib.so.8:as_image_set_locale
 libappstream-glib.so.8:as_image_set_pixbuf
 libappstream-glib.so.8:as_image_set_url
+libappstream-glib.so.8:as_image_set_url_rstr
 libappstream-glib.so.8:as_image_set_width
 libappstream-glib.so.8:as_inf_error_quark
 libappstream-glib.so.8:as_inf_get_driver_version
@@ -481,6 +485,7 @@ libappstream-glib.so.8:as_node_error_quark
 libappstream-glib.so.8:as_node_find
 libappstream-glib.so.8:as_node_find_with_attribute
 libappstream-glib.so.8:as_node_fix_locale
+libappstream-glib.so.8:as_node_fix_locale_full
 libappstream-glib.so.8:as_node_from_bytes
 libappstream-glib.so.8:as_node_from_file
 libappstream-glib.so.8:as_node_from_xml
@@ -546,6 +551,8 @@ libappstream-glib.so.8:as_ptr_array_find_string
 libappstream-glib.so.8:as_ref_string_assign
 libappstream-glib.so.8:as_ref_string_assign_safe
 libappstream-glib.so.8:as_ref_string_debug
+libappstream-glib.so.8:as_ref_string_debug_end
+libappstream-glib.so.8:as_ref_string_debug_start
 libappstream-glib.so.8:as_ref_string_new
 libappstream-glib.so.8:as_ref_string_new_copy
 libappstream-glib.so.8:as_ref_string_new_copy_with_length
