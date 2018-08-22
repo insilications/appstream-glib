@@ -701,7 +701,11 @@ libappstream-glib.so.8:as_store_get_size
 libappstream-glib.so.8:as_store_get_type
 libappstream-glib.so.8:as_store_get_watch_flags
 libappstream-glib.so.8:as_store_load
+libappstream-glib.so.8:as_store_load_async
+libappstream-glib.so.8:as_store_load_finish
 libappstream-glib.so.8:as_store_load_path
+libappstream-glib.so.8:as_store_load_path_async
+libappstream-glib.so.8:as_store_load_path_finish
 libappstream-glib.so.8:as_store_load_search_cache
 libappstream-glib.so.8:as_store_new
 libappstream-glib.so.8:as_store_remove_all
