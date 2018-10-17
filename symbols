@@ -322,6 +322,7 @@ libappstream-glib.so.8:as_app_state_to_string
 libappstream-glib.so.8:as_app_subsume
 libappstream-glib.so.8:as_app_subsume_full
 libappstream-glib.so.8:as_app_to_file
+libappstream-glib.so.8:as_app_to_xml
 libappstream-glib.so.8:as_app_validate
 libappstream-glib.so.8:as_bundle_get_id
 libappstream-glib.so.8:as_bundle_get_kind
@@ -353,6 +354,7 @@ libappstream-glib.so.8:as_checksum_set_target
 libappstream-glib.so.8:as_checksum_set_value
 libappstream-glib.so.8:as_checksum_target_from_string
 libappstream-glib.so.8:as_checksum_target_to_string
+libappstream-glib.so.8:as_content_rating_add_attribute
 libappstream-glib.so.8:as_content_rating_get_kind
 libappstream-glib.so.8:as_content_rating_get_minimum_age
 libappstream-glib.so.8:as_content_rating_get_type
