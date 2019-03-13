@@ -1,10 +1,12 @@
 # This file contains recursive sources that require this package
 cheese
+gedit
 gimp
 gnome-logs
 gnome-maps
 gnome-music
 gnome-system-monitor
+gnome-weather
 hexchat
 nautilus
 vinagre
