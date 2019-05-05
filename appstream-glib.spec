@@ -4,12 +4,12 @@
 #
 Name     : appstream-glib
 Version  : 0.7.15
-Release  : 13
+Release  : 14
 URL      : https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.15.tar.xz
 Source0  : https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.15.tar.xz
-Summary  : Test package
+Summary  : Objects and methods for reading and writing AppStream metadata
 Group    : Development/Tools
-License  : GPL-2.0 GPL-2.0+ LGPL-2.1
+License  : GPL-2.0 LGPL-2.1
 Requires: appstream-glib-bin = %{version}-%{release}
 Requires: appstream-glib-data = %{version}-%{release}
 Requires: appstream-glib-lib = %{version}-%{release}
@@ -33,7 +33,12 @@ BuildRequires : pkgconfig(libsoup-2.4)
 BuildRequires : pkgconfig(uuid)
 
 %description
-This is a test package.
+AppStream-Glib
+==============
+This library provides GObjects and helper methods to make it easy to read and
+write AppStream metadata. It also provides a simple DOM implementation that
+makes it easy to edit nodes and convert to and from the standardized XML
+representation. It also supports reading of Debian-style DEP-11 metadata.
 
 %package bin
 Summary: bin components for the appstream-glib package.
@@ -60,6 +65,7 @@ Requires: appstream-glib-lib = %{version}-%{release}
 Requires: appstream-glib-bin = %{version}-%{release}
 Requires: appstream-glib-data = %{version}-%{release}
 Provides: appstream-glib-devel = %{version}-%{release}
+Requires: appstream-glib = %{version}-%{release}
 
 %description dev
 dev components for the appstream-glib package.
@@ -107,8 +113,14 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C
-export SOURCE_DATE_EPOCH=1552516274
-export LDFLAGS="${LDFLAGS} -fno-lto"
+export SOURCE_DATE_EPOCH=1557076835
+export AR=gcc-ar
+export RANLIB=gcc-ranlib
+export NM=gcc-nm
+export CFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FCFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export FFLAGS="$CFLAGS -O3 -ffat-lto-objects -flto=4 "
+export CXXFLAGS="$CXXFLAGS -O3 -ffat-lto-objects -flto=4 "
 CFLAGS="$CFLAGS" CXXFLAGS="$CXXFLAGS" LDFLAGS="$LDFLAGS" meson --prefix /usr --buildtype=plain -Ddep11=false -Dstemmer=false -Drpm=false  builddir
 ninja -v -C builddir
 
