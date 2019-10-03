@@ -156,7 +156,9 @@ libappstream-glib.so.8:as_app_node_insert
 libappstream-glib.so.8:as_app_node_parse
 libappstream-glib.so.8:as_app_node_parse_dep11
 libappstream-glib.so.8:as_app_parse_data
+libappstream-glib.so.8:as_app_parse_desktop_data
 libappstream-glib.so.8:as_app_parse_desktop_file
+libappstream-glib.so.8:as_app_parse_desktop_kf
 libappstream-glib.so.8:as_app_parse_file
 libappstream-glib.so.8:as_app_parse_inf_file
 libappstream-glib.so.8:as_app_remove_category
