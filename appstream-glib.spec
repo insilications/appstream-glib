@@ -4,7 +4,7 @@
 #
 Name     : appstream-glib
 Version  : 0.7.16
-Release  : 15
+Release  : 16
 URL      : https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.16.tar.xz
 Source0  : https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.16.tar.xz
 Summary  : Objects and methods for reading and writing AppStream metadata
@@ -31,6 +31,7 @@ BuildRequires : pkgconfig(libarchive)
 BuildRequires : pkgconfig(libgcab-1.0)
 BuildRequires : pkgconfig(libsoup-2.4)
 BuildRequires : pkgconfig(uuid)
+BuildRequires : util-linux
 
 %description
 AppStream-Glib
@@ -114,7 +115,7 @@ export http_proxy=http://127.0.0.1:9/
 export https_proxy=http://127.0.0.1:9/
 export no_proxy=localhost,127.0.0.1,0.0.0.0
 export LANG=C.UTF-8
-export SOURCE_DATE_EPOCH=1570112576
+export SOURCE_DATE_EPOCH=1571580683
 # -Werror is for werrorists
 export GCC_IGNORE_WERROR=1
 export AR=gcc-ar
@@ -129,8 +130,8 @@ ninja -v -C builddir
 
 %install
 mkdir -p %{buildroot}/usr/share/package-licenses/appstream-glib
-cp COPYING %{buildroot}/usr/share/package-licenses/appstream-glib/COPYING
-cp data/tests/rpmbuild-font/COPYING %{buildroot}/usr/share/package-licenses/appstream-glib/data_tests_rpmbuild-font_COPYING
+cp %{_builddir}/appstream-glib-0.7.16/COPYING %{buildroot}/usr/share/package-licenses/appstream-glib/01a6b4bf79aca9b556822601186afab86e8c4fbf
+cp %{_builddir}/appstream-glib-0.7.16/data/tests/rpmbuild-font/COPYING %{buildroot}/usr/share/package-licenses/appstream-glib/06877624ea5c77efe3b7e39b0f909eda6e25a4ec
 DESTDIR=%{buildroot} ninja -C builddir install
 %find_lang appstream-glib
 
@@ -204,8 +205,8 @@ DESTDIR=%{buildroot} ninja -C builddir install
 
 %files license
 %defattr(0644,root,root,0755)
-/usr/share/package-licenses/appstream-glib/COPYING
-/usr/share/package-licenses/appstream-glib/data_tests_rpmbuild-font_COPYING
+/usr/share/package-licenses/appstream-glib/01a6b4bf79aca9b556822601186afab86e8c4fbf
+/usr/share/package-licenses/appstream-glib/06877624ea5c77efe3b7e39b0f909eda6e25a4ec
 
 %files man
 %defattr(0644,root,root,0755)
