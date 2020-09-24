@@ -4,7 +4,7 @@
 #
 Name     : appstream-glib
 Version  : 0.7.17
-Release  : 17
+Release  : 18
 URL      : https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.17.tar.xz
 Source0  : https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.17.tar.xz
 Summary  : Objects and helper methods to help reading and writing AppStream metadata
