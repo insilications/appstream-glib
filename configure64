@@ -1,0 +1,8 @@
+-Ddefault_library=both
+-Ddep11=false
+-Dstemmer=false
+-Drpm=false
+-Dfonts=true
+-Dgtk-doc=false
+-Dintrospection=true
+-Drpm=true

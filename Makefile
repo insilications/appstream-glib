@@ -1,5 +1,6 @@
 PKG_NAME := appstream-glib
-URL = https://people.freedesktop.org/~hughsient/appstream-glib/releases/appstream-glib-0.7.17.tar.xz
+URL = https://github.com/hughsie/appstream-glib.git
 ARCHIVES = 
+ARCHIVES_GIT = 
 
 include ../common/Makefile.common
