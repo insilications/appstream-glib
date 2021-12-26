@@ -38,7 +38,10 @@ glib
 glib-bin
 glibc-dev
 glib-dev
+glib-networking
 glslang
+gnutls
+gnutls-dev
 gobject-introspection
 gobject-introspection-dev
 gperf

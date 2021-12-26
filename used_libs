@@ -3,7 +3,6 @@ libc.so.6
 libcairo.so.2
 libfontconfig.so.1
 libfreetype.so.6
-libgcc_s.so.1
 libgdk-3.so.0
 libgdk_pixbuf-2.0.so.0
 libgio-2.0.so.0
@@ -12,5 +11,7 @@ libgmodule-2.0.so.0
 libgobject-2.0.so.0
 libjson-glib-1.0.so.0
 libpango-1.0.so.0
+librpm.so.9
+librpmio.so.9
 libsoup-2.4.so.1
 libuuid.so.1
